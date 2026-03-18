@@ -123,16 +123,6 @@ CDP warnings about Native VLAN mismatch appeared between switches due to inconsi
 
 - [Cisco Packet Tracer 8.x](https://www.netacad.com/courses/packet-tracer)
 
----
-
-## 📁 Repository Contents
-
-```
-├── *.pkt                        # Cisco Packet Tracer simulation file
-└── README.md                    # Project documentation
-```
-
----
 
 ## 📚 Concepts Covered
 
