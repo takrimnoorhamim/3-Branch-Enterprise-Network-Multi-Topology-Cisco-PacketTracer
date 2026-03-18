@@ -2,11 +2,59 @@
 
 A fully functional multi-branch enterprise network designed and implemented in **Cisco Packet Tracer**, featuring three branches each with a distinct network topology, interconnected over WAN serial links. The project covers IP addressing, VLAN segmentation, dynamic routing, wireless access, and comprehensive security hardening.
 
+> **Note:** This repository contains the **logical implementation** of the physical network architecture originally designed in Assignment 1. During implementation in Cisco Packet Tracer, certain aspects of the design were adjusted for practical reasons — such as topology layout changes and device placement — while keeping the core network requirements intact.
+
 ---
 
 ## 📌 Project Overview
 
 This project simulates a real-world enterprise network environment across **3 geographically separated branches**. Each branch uses a different physical topology and is fully configured with VLANs, inter-VLAN routing, RIPv2 dynamic routing, wireless access points, and both router and switch-level security.
+
+---
+
+## 🗺️ Original Physical Design (Assignment 1)
+
+The network was first designed as a physical architecture before being implemented in Cisco Packet Tracer.
+
+![Physical Network Design](Assignment1_PhysicalDesign_TakrimNoorHamim.png)
+
+---
+
+## 🖥️ Logical Implementation (Cisco Packet Tracer)
+
+### Full Network — All 3 Branches Connected via WAN
+
+![Full Network Topology](Full_Branches.png)
+
+---
+
+### Branch A — Tree Topology (Star + Bus)
+
+![Branch A](BranchA.png)
+
+**Star section** — Main switch connects PCs in a star layout with a dedicated server.  
+**Bus section** — Additional PCs connected through sub-switches forming a bus structure.  
+Wireless Access Point provides Wi-Fi connectivity (VLAN 30).
+
+---
+
+### Branch B — Hybrid Topology (Mesh + Star)
+
+![Branch B](BranchB.png)
+
+**Mesh section** — Core switches are fully interconnected for redundancy.  
+**Star section** — Additional PCs connected through a star-based sub-switch.  
+Wireless Access Point provides Wi-Fi connectivity (VLAN 30).
+
+---
+
+### Branch C — Hybrid Topology (Bus + Ring)
+
+![Branch C](BranchC.png)
+
+**Ring section** — Switches connected in a ring for fault tolerance.  
+**Bus section** — PCs connected in a linear bus arrangement.  
+Wireless Access Point provides Wi-Fi connectivity (VLAN 30).
 
 ---
 
@@ -128,8 +176,13 @@ CDP warnings about Native VLAN mismatch appeared between switches due to inconsi
 ## 📁 Repository Contents
 
 ```
-├── *.pkt                        # Cisco Packet Tracer simulation file
-└── README.md                    # Project documentation
+├── *.pkt                                           # Cisco Packet Tracer simulation file
+├── Assignment1_PhysicalDesign_TakrimNoorHamim.png  # Original physical design diagram
+├── Full_Branches.png                               # Full logical network topology
+├── BranchA.png                                     # Branch A topology
+├── BranchB.png                                     # Branch B topology
+├── BranchC.png                                     # Branch C topology
+└── README.md                                       # Project documentation
 ```
 
 ---
