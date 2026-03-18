@@ -162,33 +162,12 @@ Branch B              Branch C
 **Port Security on Trunk Ports**  
 During initial switch configuration, port security was accidentally applied to trunk ports. This caused inter-VLAN ping failures since trunk ports carry traffic for multiple VLANs and should not have port-security restrictions. The issue was resolved by removing port-security from trunk ports and applying it exclusively to access ports.
 
-**Native VLAN Mismatch**  
-CDP warnings about Native VLAN mismatch appeared between switches due to inconsistent native VLAN settings on trunk links. This was identified using `show interfaces status` and resolved by aligning native VLAN configurations.
-
 ---
 
 ## 🛠️ Tools Used
 
 - [Cisco Packet Tracer 8.x](https://www.netacad.com/courses/packet-tracer)
 
-<<<<<<< HEAD
----
-
-## 📁 Repository Contents
-
-```
-├── *.pkt                                           # Cisco Packet Tracer simulation file
-├── Assignment1_PhysicalDesign_TakrimNoorHamim.png  # Original physical design diagram
-├── Full_Branches.png                               # Full logical network topology
-├── BranchA.png                                     # Branch A topology
-├── BranchB.png                                     # Branch B topology
-├── BranchC.png                                     # Branch C topology
-└── README.md                                       # Project documentation
-```
-
----
-=======
->>>>>>> 9d4209b44bba72fde8d508112a163671ecf5541d
 
 ## 📚 Concepts Covered
 
